@@ -1,0 +1,19 @@
+{
+  "name": "service-worker-sandbox",
+  "version": "1.0.0",
+  "description": "My ServiceWorker Sandbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git"
+  },
+  "author": "Daniel Leite <dleitee@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "ejs": "^2.4.1",
+    "express": "^4.13.4"
+  }
+}
