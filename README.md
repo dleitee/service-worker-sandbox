@@ -23,3 +23,9 @@ Open your browser and access: [http://localhost:3000](http://localhost:3000)
 If you use Chrome, open *ChromeDevTool -> Network* and change option *No Throttling* to *Offline* and **refresh page**.
 
 If you use other browser, disconnect your server and **refresh page**.
+
+## Push notifications
+
+## Fallback Response
+
+## Mock Response
