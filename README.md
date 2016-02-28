@@ -28,4 +28,6 @@ If you use other browser, disconnect your server and **refresh page**.
 
 ## Fallback Response
 
+Open your browser and access: [http://localhost:3000/undefined-url](http://localhost:3000/undefined-url)
+
 ## Mock Response
