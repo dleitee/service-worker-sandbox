@@ -1,0 +1,23 @@
+{
+  "node": true,
+  "browser": true,
+  "esnext": true,
+  "bitwise": true,
+  "camelcase": true,
+  "curly": true,
+  "eqeqeq": true,
+  "immed": true,
+  "indent": 4,
+  "newcap": true,
+  "noarg": true,
+  "quotmark": "single",
+  "undef": true,
+  "unused": "strict",
+  "strict": false,
+  "trailing": true,
+  "smarttabs": true,
+  "globals": {
+    "this": true,
+    "caches": true
+  }
+}
