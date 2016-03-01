@@ -7,7 +7,7 @@ app.use('/service-worker.js', express.static(__dirname + '/public/js/service-wor
 app.set('view engine', 'ejs');
 app.set('views', './views');
 
-app.get('/', function (req, res) {
+app.get('/', function (undefined, res) {
   res.render('index');
 });
 

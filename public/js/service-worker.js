@@ -1,5 +1,3 @@
-'use strict';
-
 var cacheVersion = 1;
 var currentCache = {
   offline: 'offline-cache' + cacheVersion
@@ -8,7 +6,9 @@ var currentCache = {
 const offlineUrl = '/static/html/offline.html';
 const errorUrl = '/static/html/error.html';
 
-this.addEventListener('install', function(event) {
+const vm = this;
+
+vm.addEventListener('install', function(event) {
 
     // Offline
     event.waitUntil(
@@ -22,7 +22,7 @@ this.addEventListener('install', function(event) {
     );
 });
 
-this.addEventListener('fetch', function(event) {
+vm.addEventListener('fetch', function(event) {
 
     if (event.request.mode === 'navigate' || (event.request.method === 'GET' && event.request.headers.get('accept').includes('text/html'))) {
         event.respondWith(
@@ -30,7 +30,7 @@ this.addEventListener('fetch', function(event) {
             .then(function(response){
                 if (!response.ok) {
                     // Fallback response
-                    console.log("Status: " + response.status);
+                    console.log('Status: ' + response.status);
                     return caches.match(errorUrl);
                 }
 
@@ -38,6 +38,7 @@ this.addEventListener('fetch', function(event) {
             })
             .catch(function(error) {
                 // Offline response
+                console.log(error);
                 return caches.match(offlineUrl);
             })
         );
