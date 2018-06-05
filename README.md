@@ -1,5 +1,7 @@
 # service-worker-sandbox
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/dleitee/service-worker-sandbox.svg)](https://greenkeeper.io/)
+
 My service worker sandbox
 
 ## What is a Service Worker
